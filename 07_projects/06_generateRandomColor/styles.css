@@ -1,0 +1,7 @@
+nav a {
+    color: rgb(201, 164, 164); /* White text */
+    text-decoration: none; /* Remove underline */
+    margin-right: 15px; /* Add spacing between links */
+    font-size: 26px; /* Adjust font size */
+    transition: color 0.3s; /* Smooth hover effect */
+}
