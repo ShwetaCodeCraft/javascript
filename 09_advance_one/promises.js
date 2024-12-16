@@ -5,11 +5,12 @@ const promiseOne = new Promise(function(resolve, reject){
         console.log('Async task is compelete');
         resolve()
     }, 1000)
-})
+});
 
 promiseOne.then(function(){
     console.log("Promise consumed");
-})
+});
+
 
 new Promise(function(resolve, reject){
     setTimeout(function(){
@@ -40,7 +41,7 @@ const promiseFour = new Promise(function(resolve, reject){
             reject('ERROR: Something went wrong')
         }
     }, 1000)
-})
+});
 
  promiseFour
  .then((user) => {
@@ -72,7 +73,7 @@ async function consumePromiseFive(){
     } catch (error) {
         console.log(error);
     }
-}
+};
 
 consumePromiseFive()
 
@@ -87,7 +88,8 @@ consumePromiseFive()
 //     }
 // }
 
-//getAllUsers()
+// getAllUsers()
+// getAllUsers()
 
 fetch('https://api.github.com/users/hiteshchoudhary')
 .then((response) => {
